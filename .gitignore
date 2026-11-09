@@ -1,0 +1,11 @@
+.build/
+*.xlsx
+*.xls
+*.png
+*.jpg
+*.jpeg
+*.tmp
+*.log
+__pycache__/
+.DS_Store
+Thumbs.db

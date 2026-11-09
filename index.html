@@ -18,6 +18,65 @@
 @media(max-width:800px){.brand{padding:7px 20px;justify-content:flex-start}.brand-signature{width:150px;max-width:100%}.result-grid{grid-template-columns:repeat(2,minmax(0,1fr));padding:19px;gap:18px 15px}}
 @media(max-width:420px){.result-grid{gap:17px 12px}.result-label{font-size:12px}}
 [hidden]{display:none!important}
+/* Selected style A */
+
+:root{--ink:#252629;--muted:#85888d;--line:#e8e9ec;--bg:#fff;--nav:#fff;--blue:#34373c;--orange:#fff9f2;--orange-border:#f0d7b9;--yellow:#fffcef}
+body{font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif;background:#fff;-webkit-font-smoothing:antialiased}
+aside{color:#34373c;border-right:1px solid var(--line)}
+.brand{padding:21px 27px 14px;justify-content:flex-start;border:0}
+.brand-signature{width:160px;filter:invert(1);max-width:100%}
+.nav-head{padding:22px 25px 11px;color:#989b9f;font-size:11px}
+nav{padding:0 13px}
+.nav-item{color:#74787d;font-size:13px;font-weight:400;padding:11px 12px;margin:4px 0;gap:12px;border-radius:7px}
+.nav-item:hover{color:#202124;background:#f0f1f2}
+.nav-item.active{background:#e9ebed;color:#202124;font-weight:600}
+.nav-symbol,.nav-item.active .nav-symbol{border:0;background:none;width:20px;height:20px;display:grid;place-items:center;color:inherit}
+.nav-symbol svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.55;stroke-linecap:round;stroke-linejoin:round}
+.nav-footer{border-top:1px solid var(--line);color:#96999e;padding:20px 25px;line-height:1.9}
+.topbar{height:68px;border-bottom:1px solid var(--line);padding:0 42px}
+.breadcrumb{font-size:12px;color:#9a9da2}.breadcrumb strong{color:#5b5f64}
+button{border-color:#e3e5e8;color:#5a5e63;font-size:12px;padding:7px 12px;background:#fff;border-radius:6px}
+button:hover{border-color:#b5b9be;background:#f8f9fa}
+.tools{gap:8px}.tools #export{background:#252629;border-color:#252629;color:#fff}
+.save-state{color:#96999d;font-size:11px;margin-right:15px}.save-state:before{background:#858a8c;width:5px;height:5px}
+.main{padding:34px 42px 26px;max-width:1400px}
+.heading{margin-bottom:25px;align-items:center}.heading h2{font-size:29px;letter-spacing:-.6px;margin-bottom:8px;font-weight:600}
+.heading p{font-size:12px;color:#92959a}.legend{font-size:11px;gap:19px;color:#8c9095}
+.notice{background:#fafafa;border-left:2px solid #d5d7da;color:#8a8d92;font-size:11px;padding:10px 13px;margin-bottom:23px}
+.panel{border-radius:8px;border-color:var(--line);margin-bottom:20px;box-shadow:none}
+.panel-header{padding:16px 22px;border-color:var(--line)}
+.panel-header h3{font-size:14px;font-weight:600}.panel-header h3:before{height:12px;width:2px;margin-right:9px;background:#c4a477}
+.panel-header.results h3:before{background:#c8b862}.panel-hint{font-size:11px;color:#a2a5aa}
+.fields,.result-grid{padding:22px;gap:21px 22px;grid-template-columns:repeat(4,minmax(0,1fr))}
+.field label,.result-label{font-size:12px;min-height:20px;margin-bottom:7px;color:#51555b;line-height:1.5}
+.unit,.result .unit{font-size:10px;color:#999da3}
+.field input,.field select{height:40px;background:var(--orange);border-color:var(--orange-border);font-size:12px;color:#6b5743;border-radius:5px;padding:8px 11px}
+.result-value,.result-value.text,.result.pending .result-value{height:40px;background:var(--yellow);border-color:#eae0b8;font-size:12px;line-height:22px;color:#5f5738;padding:8px 11px;font-weight:500;border-radius:5px}
+.input-foot{padding:12px 22px;background:#fcfcfc;border-color:var(--line)}.input-foot p{font-size:11px;color:#a1a4a9}
+.input-foot button{font-size:11px;color:#81858a;padding:5px 10px}
+.status-tag{background:#f2f4f3;color:#777e79;font-size:10px;padding:4px 8px}
+.checks{padding:0 22px 13px}.checks:empty{display:none}
+.details summary{padding:14px 22px;font-size:12px;color:#878b91;font-weight:400}
+.details summary::marker{font-size:8px;color:#a3a7ac}
+footer{font-size:10px;color:#b0b4b9;margin-top:21px}
+
+@media(max-width:1150px){.fields,.result-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:800px){.brand{padding:8px 20px}.brand-signature{width:140px}.main{padding:24px 18px}.fields,.result-grid{padding:18px;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 14px}.topbar{padding:10px 18px}.legend{gap:5px}.heading h2{font-size:25px}}
+
+aside{background:#f6f6f6;width:224px}.workspace{margin-left:224px}
+.brand{padding-top:24px;padding-bottom:18px}.brand-signature{width:150px;opacity:.84}
+.nav-head{padding-top:19px}.nav-item.active{background:#e8e8e8}
+.topbar{border-bottom-color:#efefef}.panel{border-radius:7px}
+.tools #export{border-radius:18px;padding:7px 16px}.tools button:not(#export){border-color:transparent}
+.heading h2{font-weight:550}.heading{margin-bottom:26px}
+.field input:focus,.field select:focus{border-color:#898b8f;outline:2px solid #eeeeef}
+.panel-hint{color:#aaaeb3}.details{background:#fcfcfc}
+@media(max-width:800px){aside{width:100%}.workspace{margin-left:0}.tools button:not(#export){border-color:#ececec}}
+
+.toast{left:calc(50% + 112px);background:#303237;color:#fff}
+.result.pending .result-value{padding:4px 10px;font-size:11px;line-height:15px}
+@media(max-width:800px){.toast{left:50%}}
+
 @media print{aside,.topbar,.mobile-module,.subnav,.input-foot,.details,.toast{display:none!important}.workspace{margin:0}.main{padding:0;max-width:none}.panel,.result{break-inside:avoid}.fields{grid-template-columns:repeat(3,1fr)}.result-grid{grid-template-columns:repeat(3,1fr)}body{background:#fff}.heading:before{content:'万唯嗣设计计算系统';font-size:16px;display:block}.heading{display:block}.legend{display:none}.field input,.field select{appearance:none;color:#000}.panel{border-color:#bbb}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
 </style></head>
 <body>
@@ -118,6 +177,7 @@ const $=id=>document.getElementById(id);
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const STORE='wws-design-calculator-v1';
 const modules=['振动筛','收尘器','皮带机','空气输送斜槽','空压机站','平底库卸空率','露天台阶爆破','铲运设备','皮带机斜槽气力输送','未整理'];
+const NAV_ICONS=["<rect x=\"3\" y=\"5\" width=\"18\" height=\"13\" rx=\"2\"/><path d=\"M7 9h10M7 13h10M6 21l2-3m8 0 2 3\"/>", "<path d=\"M5 3h14v8l-5 5v4l-4 2v-6l-5-5zM5 7h14\"/>", "<rect x=\"2\" y=\"7\" width=\"20\" height=\"9\" rx=\"4\"/><path d=\"M7 11h10M5 20l2-4m10 0 2 4\"/><circle cx=\"7\" cy=\"11.5\" r=\"1\"/><circle cx=\"17\" cy=\"11.5\" r=\"1\"/>", "<path d=\"M3 8h18M3 17h18M7 11l3 3-3 3m8-11 3 3-3 3\"/>", "<rect x=\"3\" y=\"9\" width=\"18\" height=\"10\" rx=\"4\"/><circle cx=\"12\" cy=\"5\" r=\"3\"/><path d=\"M8 22v-3m8 3v-3M12 5l1-1\"/>", "<ellipse cx=\"12\" cy=\"5\" rx=\"8\" ry=\"3\"/><path d=\"M4 5v13c0 4 16 4 16 0V5M12 20v3\"/>", "<path d=\"M4 19h16M5 15l4-7 4 5 6-8M5 4l3 1m9 13 3-2M12 2v3\"/>", "<path d=\"M3 9h11v9H3zM14 12h4l3 4v2h-7M6 9V5h6v4\"/><circle cx=\"6\" cy=\"19\" r=\"2\"/><circle cx=\"18\" cy=\"19\" r=\"2\"/>", "<path d=\"M4 6h16M4 12h16M4 18h16M7 3v6m10 0v6m-7 0v6\"/>", "<rect x=\"3\" y=\"3\" width=\"7\" height=\"7\" rx=\"1\"/><rect x=\"14\" y=\"3\" width=\"7\" height=\"7\" rx=\"1\"/><rect x=\"3\" y=\"14\" width=\"7\" height=\"7\" rx=\"1\"/><rect x=\"14\" y=\"14\" width=\"7\" height=\"7\" rx=\"1\"/>"];
 const moduleTitles={'皮带机斜槽气力输送':'输送计算补充','未整理':'其他设计计算'};
 const descriptions={'振动筛':'填写设备与物料参数，自动计算处理量与成品量。','收尘器':'计算收尘风量、过滤面积及配套设备选型。','皮带机':'输入输送条件，计算驱动功率、张力与选型参数。','空气输送斜槽':'计算斜槽输送能力、耗气量与风机功率。','空压机站':'汇总子项耗气量，计算压缩空气站及储气罐参数。','平底库卸空率':'计算圆库储量，结合各层死料区面积核算卸空率。','露天台阶爆破':'按原工作簿计算孔网参数、装药量与相关距离。','铲运设备':'根据年生产需求与钻机能力计算设备数量。','皮带机斜槽气力输送':'带式输送、螺旋输送与气力输送的补充计算。','未整理':'对辊破碎、堆棚储量、空间角与综合能耗计算。'};
 const sheetMap=new Map(DATA.sheets.map(s=>[s.name,s]));
@@ -148,7 +208,7 @@ function fieldHTML(group,a){const c=cell(group.sheet,a),v=engine.get(group.sheet
  return `<div class="field" data-field="${a}"><label for="${id}"><span data-label="${a}">${esc(name)}</span>${u?`<span class="unit">${esc(u)}</span>`:''}</label><div class="input-wrap">${input}</div><small id="error-${a}"></small></div>`;
 }
 function render(){const group=g(),s=group.sheet;validation.clear();document.title=moduleTitles[s]||s;document.title+=' · 万唯嗣设计计算系统';
- $('nav').innerHTML=modules.map(x=>`<button class="nav-item ${s===x?'active':''}" data-module="${esc(x)}" ${s===x?'aria-current="page"':''}><span class="nav-symbol" aria-hidden="true">${esc((moduleTitles[x]||x)[0])}</span><span>${esc(moduleTitles[x]||x)}</span></button>`).join('');
+ $('nav').innerHTML=modules.map(x=>`<button class="nav-item ${s===x?'active':''}" data-module="${esc(x)}" ${s===x?'aria-current="page"':''}><span class="nav-symbol" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true">${NAV_ICONS[modules.indexOf(x)]}</svg></span><span>${esc(moduleTitles[x]||x)}</span></button>`).join('');
  $('mobileNav').innerHTML=modules.map(x=>`<option value="${esc(x)}" ${x===s?'selected':''}>${esc(moduleTitles[x]||x)}</option>`).join('');
  $('title').textContent=moduleTitles[s]||s;$('crumb').textContent=moduleTitles[s]||s;$('subtitle').textContent=descriptions[s];
  const siblings=DATA.groups.map((x,i)=>({...x,index:i})).filter(x=>x.sheet===s);$('subnav').hidden=siblings.length<2;$('subnav').innerHTML=siblings.map(x=>`<button data-group="${x.index}" class="${x.index===active?'active':''}" ${x.index===active?'aria-current="true"':''}>${esc(x.title)}</button>`).join('');
